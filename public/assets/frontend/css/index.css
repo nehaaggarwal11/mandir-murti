@@ -1,0 +1,53 @@
+#homeSlider{
+    height: 585px;
+}
+.carousel-inner img{
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel-indicators li {
+    width: 130px;
+    height: 100%;
+    opacity: 0.8;
+}
+#gallery-filter .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+#gallery-filter .single-content img {
+    width: 360px;
+    height: 100%;
+    margin: 5px;
+}
+#gallery-filter .filters {
+    width: 100%;
+    text-align: center;
+}
+#gallery-filter ul {
+    list-style: none;
+    padding: 20px 0;
+}
+#gallery-filter li {
+    display: inline;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
+
+#gallery-filter li:hover {
+    color: #a6a6a6;
+}
+
+#gallery-filter li.active {
+    color: #ccc;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
