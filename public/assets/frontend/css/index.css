@@ -1,10 +1,28 @@
 #homeSlider{
     height: 585px;
+    background: linear-gradient(#a04e4e 50%, white 50%);
+    margin-bottom: 40px;
+}
+.carousel-inner{
+    border: 5px solid #a58251;
 }
 .carousel-inner img{
     height: 550px;
     object-fit: cover;
     object-position: center;
+}
+.carousel-indicators{
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.carousel-control-prev {
+    left: 10%;
+    width: 2%;
+}
+.carousel-control-next {
+    right: 10%;
+    width: 2%;
 }
 .carousel-indicators li {
     width: 130px;
@@ -19,7 +37,7 @@
 }
 
 #gallery-filter .single-content img {
-    width: 360px;
+    width: 350px;
     height: 100%;
     margin: 5px;
 }

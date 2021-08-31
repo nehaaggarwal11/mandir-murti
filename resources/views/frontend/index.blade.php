@@ -6,6 +6,7 @@
 @section('content')
 
 <div id="homeSlider" class="carousel slide" data-ride="carousel">
+    <div class="container">
         <div class="row">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -25,19 +26,21 @@
             </ol>
              <a class="carousel-control-prev" href="#homeSlider" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
+                <span class="sr-only d-none">Previous</span>
             </a>
             <a class="carousel-control-next" href="#homeSlider" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+                <span class="sr-only d-none">Next</span>
             </a>
         </div>
+    </div>
 </div>
 <section id="home-abt" class="sp">
     <div class="container">
         <div class="row text-center">
             <div class="col-md-12">
                 <h1>What is Lorem Ipsum?</h1>
+                <div class="seprator"></div>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
             </div>
         </div>
@@ -89,11 +92,12 @@
 @section('script')
 <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 <script>
- $(document).ready(()=>{
+$(window).on('load',function(){
      $('.grid').isotope({
     itemSelector: '.grid-item',
     });
-
+});
+ $(document).ready(()=>{
     // filter items on button click
         $('.filter-button-group').on( 'click', 'li', function() {
         var filterValue = $(this).attr('data-filter');
