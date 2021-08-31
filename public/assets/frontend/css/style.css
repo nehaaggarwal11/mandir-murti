@@ -1,6 +1,37 @@
-.navBar{
-    background: #0f0f0f;
+/**********Header**********/
+.navBar {
+    background: #a04e4e;
 }
+/**********Footer**********/
+footer {
+    background: #a04e4e;
+}
+/*********General Css***********/
 .sp{
     padding: 50px 0;
 }
+.row{
+    margin-right:0;
+    margin-left: 0;
+}
+.seprator {
+    background: url('/assets/frontend/imgs/floral-decor.png') no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    height: 25px;
+    background-position: center;
+    background-size: auto;
+}
+
+.seprator::before,
+.seprator::after {
+    content: "";
+    border: 1px #a58251;
+    border-style: dashed none solid;
+    width: 135px;
+    display: inline-block;
+    height: 5px;
+    margin: 0 45px;
+}
+
