@@ -41,7 +41,7 @@
             <div class="col-md-12 text-center">
                 <div id="footer-content">
                     <p>Mandir Murti Luxmi Narayan is devoted towards the deity worship and charities. All other functions carried out in the temple are all meant to support and encourage the betterment and success of the society.</p>
-                    <p id="copy-right">Copyrights © 2021 Powered by <a href="https://wingdinginfotech.com/" class="text-dark" target="_blank">www.wingdinginfotech.com</a> . All rights reserved</p>
+                    <p id="copy-right">Copyrights © 2021 Powered by <a href="https://wingdinginfotech.com/" class="text-dark" target="_blank">www.wingdinginfotech.com</a> . All Rights Reserved.</p>
                 </div>   
             </div>
         </div>
