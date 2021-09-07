@@ -10,6 +10,10 @@
         <div class="row">
             <div class="carousel-inner">
                 <div class="carousel-item active">
+                    <img src="{{asset('assets/frontend/imgs/slider/luxmi-narayan-1.jpg')}}"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
                     <img src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}"
                         class="d-block w-100">
                 </div>
@@ -19,6 +23,9 @@
             </div>
             <ol class="carousel-indicators">
                 <li data-target="#home-slider" data-slide-to="0" class="active"><img
+                        src="{{asset('assets/frontend/imgs/slider/luxmi-narayan-1.jpg')}}" class="d-block w-100">
+                </li> 
+                 <li data-target="#home-slider" data-slide-to="0" class="active"><img
                         src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}" class="d-block w-100">
                 </li>
                 <li data-target="#home-slider" data-slide-to="1"><img

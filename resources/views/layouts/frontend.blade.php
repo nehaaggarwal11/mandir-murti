@@ -41,7 +41,7 @@
             <div class="col-md-12 text-center">
                 <div id="footer-content">
                     <p>Mandir Murti Luxmi Narayan is devoted towards the deity worship and charities. All other functions carried out in the temple are all meant to support and encourage the betterment and success of the society.</p>
-                    <p id="copy-right">Copyright © 2021 <a href="www.mandirmurtiluxminarayan.com" class="text-light">mandirmurtiluxminarayan.com</a>. All rights reserved</p>
+                    <p id="copy-right">Copyrights © 2021 Powered by <a href="https://wingdinginfotech.com/" class="text-dark" target="_blank">www.wingdinginfotech.com</a> . All rights reserved</p>
                 </div>   
             </div>
         </div>
@@ -51,14 +51,15 @@
 <!------ Image lightbox ---->
 <div id="lightBox">
     <div class="lightBox-bg">
-        <div class="close"></div>
-        {{-- <div class="lightBox-body"> --}}
+        <div class="close">X</div>
+        <div class="lightBox-body"> 
 
         </div>
     </div>
 </div>
 <!------ END Image lightbox ---->
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="{{asset('assets/frontend/js/main.js')}}"></script>
 @yield('script')
 </body>
 </html>
