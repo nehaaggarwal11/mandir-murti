@@ -1,23 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
 /**********Header**********/
-.navBar {
-    background: #a04e4e;
+body {
+    background: url(/assets/frontend/imgs/bg_body.jpg) #ffe6b9;
+    font-family: 'Rosario', sans-serif;
+
 }
+
+.navBar {
+    background: transparent;
+    background-size: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.navBar .logo-anchor {
+    display: inline-block;
+    background-size: 150px;
+    padding: 10px 45px 30px;
+    margin: 0 0 -55px 0px;
+    z-index: 10;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.mm-head {
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    top: 25%;
+    margin: 0 -190px;
+    color: #521b00;
+}
+
+.navBar .logo-anchor::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 160px;
+    background: linear-gradient(transparent 65%, #f16e24 60%);
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.navBar .logo-anchor::after {
+    content: "";
+    width: 103%;
+    position: absolute;
+    height: 165px;
+    background: linear-gradient(transparent 65%, #a58251 60%);
+    left: -4px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
 /**********Footer**********/
 footer {
-    background: #a04e4e;
+    background: url(/assets/frontend/imgs/footer_bg.jpg);
+    padding: 25px 0;
+    background-size: cover;
+    color: #fff;
+    height: 309px;
+    background-position: bottom;
+    font-size: 17px;
+}
+footer p{
+    margin-bottom: 5px;
+}
+#footer-content{
+    padding: 0 9em;
+}
+#copy-right{
+    font-size: 14px;
+    text-transform: lowercase;
 }
 /*********General Css***********/
-.sp{
-    padding: 50px 0;
+.sp {
+    padding: 50px 0 20px;
 }
-.row{
-    margin-right:0;
+
+.mm-heading {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    letter-spacing: 4.5px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.row {
+    margin-right: 0;
     margin-left: 0;
 }
+
 .seprator {
     background: url('/assets/frontend/imgs/floral-decor.png') no-repeat;
-    background-position-x: 0%;
-    background-position-y: 0%;
     background-size: auto;
     height: 25px;
     background-position: center;
@@ -34,4 +113,3 @@ footer {
     height: 5px;
     margin: 0 45px;
 }
-
