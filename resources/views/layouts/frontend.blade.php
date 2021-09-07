@@ -20,13 +20,14 @@
 <header>
     <nav class="navBar">
        <div class="row">
-            <div class="col-md-4">               
+            <div class="col-md-4 text-right">    
+                <div class="mm-head">Mandir Murti</div>           
             </div>
             <div class="col-md-4 text-center">
-                <img alt="logo" class="img-fluid" width="110" height="119" src="{{asset('assets/frontend/imgs/logo/logo.png')}}">
+                <a href="/" class="logo-anchor"><img alt="logo" class="img-fluid" width="150" height="150" src="{{asset('assets/frontend/imgs/logo/mandir-logo-brown3.png')}}"></a>
             </div>
-            <div class="col-md-4">
-
+            <div class="col-md-4 text-left">
+                <div class="mm-head">Luxmi Narayan</div> 
             </div>
        </div>
     </nav>
@@ -37,17 +38,26 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">               
-            </div>
-            <div class="col-md-4 text-center">
-                <img alt="logo" class="img-fluid" width="110" height="119" src="{{asset('assets/frontend/imgs/logo/logo.png')}}">
-            </div>
-            <div class="col-md-4">
-
+            <div class="col-md-12 text-center">
+                <div id="footer-content">
+                    <p>Mandir Murti Luxmi Narayan is devoted towards the deity worship and charities. All other functions carried out in the temple are all meant to support and encourage the betterment and success of the society.</p>
+                    <p id="copy-right">Copyright © 2021 <a href="www.mandirmurtiluxminarayan.com" class="text-light">mandirmurtiluxminarayan.com</a>. All rights reserved</p>
+                </div>   
             </div>
         </div>
     </div>
 </footer>
+
+<!------ Image lightbox ---->
+<div id="lightBox">
+    <div class="lightBox-bg">
+        <div class="close"></div>
+        {{-- <div class="lightBox-body"> --}}
+
+        </div>
+    </div>
+</div>
+<!------ END Image lightbox ---->
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 @yield('script')
 </body>

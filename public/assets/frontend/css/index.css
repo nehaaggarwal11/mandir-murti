@@ -1,34 +1,53 @@
-#homeSlider{
+#home-slider {
     height: 585px;
-    background: linear-gradient(#a04e4e 50%, white 50%);
     margin-bottom: 40px;
 }
-.carousel-inner{
+
+#home-slider::before {
+    content: "";
+    background: url(/assets/frontend/imgs/bg.png), linear-gradient(130deg, rgba(255, 134, 0, 1) 0%, rgba(226, 83, 76, 1) 100%);
+    position: absolute;
+    width: 100%;
+    height: 560px;
+    top: -50%;
+}
+
+#home-slider .container {
+    max-width: 85%;
+}
+
+.carousel-inner {
     border: 5px solid #a58251;
 }
-.carousel-inner img{
-    height: 550px;
+
+.carousel-inner img {
+    height: 500px;
     object-fit: cover;
-    object-position: center;
+    object-position: top;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     margin: 0;
     position: relative;
     width: 100%;
 }
+
 .carousel-control-prev {
     left: 10%;
     width: 2%;
 }
+
 .carousel-control-next {
     right: 10%;
     width: 2%;
 }
+
 .carousel-indicators li {
     width: 130px;
-    height: 100%;
+    height: auto;
     opacity: 0.8;
 }
+
 #gallery-filter .content {
     width: 100%;
     margin: 0 auto;
@@ -36,19 +55,25 @@
     text-align: center;
 }
 
-#gallery-filter .single-content img {
+#gallery-filter .single-content img,
+#gallery-filter .single-content iframe {
     width: 350px;
     height: 100%;
     margin: 5px;
+}
+#gallery-filter .single-content iframe{
+    height: 235px;
 }
 #gallery-filter .filters {
     width: 100%;
     text-align: center;
 }
+
 #gallery-filter ul {
     list-style: none;
     padding: 20px 0;
 }
+
 #gallery-filter li {
     display: inline;
     padding: 10px 25px;
@@ -58,14 +83,15 @@
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: .2em;
-}
-
-#gallery-filter li:hover {
-    color: #a6a6a6;
-}
-
-#gallery-filter li.active {
-    color: #ccc;
-    border: 1px solid #ccc;
+    border: 1px solid #636363;
     border-radius: 15px;
+    transition: 0.5s;
+}
+
+#gallery-filter li.active,
+#gallery-filter li:hover {
+    color: #000;
+    border: 1px solid #f60;
+    border-radius: 15px;
+    background: #ff660038;
 }
