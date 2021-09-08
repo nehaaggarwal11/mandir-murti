@@ -77,7 +77,7 @@
 }
 #gallery-filter .single-content::after {
    background: url(/assets/frontend/imgs/lightbox-thumb.png) no-repeat;
-   background-position: center 255px;
+   background-position: center 1000px;
 }
 #gallery-filter .single-content:hover:after{
     background-position: center;

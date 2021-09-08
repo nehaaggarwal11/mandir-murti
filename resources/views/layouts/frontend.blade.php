@@ -10,6 +10,7 @@
     <link href="{{asset('assets/frontend/imgs/logo/favicon.png')}}" rel="apple-touch-icon">
     <!--------- CSS ------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"     />
     <link rel="stylesheet" href="{{asset('assets/frontend/css/style.css')}}">
      @yield('css')
     <!------- JS ---------->
@@ -48,18 +49,10 @@
     </div>
 </footer>
 
-<!------ Image lightbox ---->
-<div id="lightBox">
-    <div class="lightBox-bg">
-        <div class="close">X</div>
-        <div class="lightBox-body"> 
 
-        </div>
-    </div>
-</div>
-<!------ END Image lightbox ---->
  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
  <script src="{{asset('assets/frontend/js/main.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
 @yield('script')
 </body>
 </html>

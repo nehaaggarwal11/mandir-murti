@@ -69,32 +69,32 @@
                     </ul>
                 </div>
                 <div class="content grid">
-                <div class="single-content webdesign webdev grid-item">
-                        <img class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
+                <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign webdev grid-item">
+                        <img  class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                <div class="single-content brand webdesign grid-item">
+                <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}" class="single-content brand webdesign grid-item">
                         <img class="p2" src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}">
                 </div>
-                <div class="single-content brand grid-item">
+                <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content brand grid-item">
                         <img class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                    <div class="single-content webdesign grid-item">
+                    <div data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign grid-item">
                         <img class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                    <div class="single-content webdesign grid-item">
+                    <div data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign grid-item">
                         <img class="p2" src="{{asset('assets/frontend/imgs/gallery/g1.jpg')}}">
                 </div>
-                <div class="single-content webdesign brand grid-item">
+                <div data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign brand grid-item">
                         <img class="p2"src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                <div class="single-content webdesign grid-item">
+                <div data-fancybox="gallery"  data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign grid-item">
                         <img class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                <div class="single-content webdesign webdev grid-item">
+                <div data-fancybox="gallery"  data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign webdev grid-item">
                         <img class="p2"src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
-                <div class="single-content webdesign video grid-item">
-                    <iframe width="100%" height="235" src="https://www.youtube.com/embed/gZllwhG_MCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div data-fancybox="gallery"  data-fancybox="gallery" data-src="https://www.youtube.com/embed/gZllwhG_MCc" class="single-content webdesign video grid-item">
+                    <iframe width="100%" src="https://www.youtube.com/embed/gZllwhG_MCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
             </div>
