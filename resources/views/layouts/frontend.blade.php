@@ -25,7 +25,7 @@
                 <div class="mm-head">Mandir Murti</div>           
             </div>
             <div class="col-md-4 text-center">
-                <a href="/" class="logo-anchor"><img alt="logo" class="img-fluid" width="150" height="150" src="{{asset('assets/frontend/imgs/logo/mandir-logo-brown3.png')}}"></a>
+                <a href="/" class="logo-anchor"><img alt="logo" width="150" height="100%" src="{{asset('assets/frontend/imgs/logo/mandir-logo-brown3.png')}}"></a>
             </div>
             <div class="col-md-4 text-left">
                 <div class="mm-head">Luxmi Narayan</div> 
