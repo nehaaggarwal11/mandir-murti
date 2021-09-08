@@ -31,7 +31,7 @@ body {
     position: relative;
     display: inline-block;
     top: 25%;
-    margin: 0 -190px;
+    margin: 0 -235px;
     color: #521b00;
 }
 
@@ -113,4 +113,143 @@ footer p{
     display: inline-block;
     height: 5px;
     margin: 0 45px;
+}
+
+/********** Gallery **********/
+#gallery-filter .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+#gallery-filter .single-content {
+    margin: 5px;
+    overflow: hidden;
+}
+
+#gallery-filter .single-content::before,
+#gallery-filter .single-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#gallery-filter .single-content::after {
+    background: url(/assets/frontend/imgs/lightbox-thumb.png) no-repeat;
+    background-position: center 1000px;
+}
+
+#gallery-filter .single-content:hover:after {
+    background-position: center;
+}
+
+#gallery-filter .single-content:hover:before {
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#gallery-filter .single-content img,
+#gallery-filter .single-content iframe {
+    width: 350px;
+    height: 100%
+}
+
+#gallery-filter .single-content iframe {
+    height: 235px;
+}
+
+#gallery-filter .filters {
+    width: 100%;
+    text-align: center;
+}
+
+#gallery-filter ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+#gallery-filter li {
+    display: inline;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border: 1px solid #636363;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#gallery-filter li.active,
+#gallery-filter li:hover {
+    color: #000;
+    border: 1px solid #f60;
+    border-radius: 15px;
+    background: #ff660038;
+}
+
+/************** Responisve *************/
+
+@media only screen and (max-width: 1399px) {
+    .mm-head {
+        margin: 0 -135px;
+    }
+
+    #gallery-filter .single-content img,
+    #gallery-filter .single-content iframe {
+        width: 290px;
+    }
+
+    #copy-right {
+        margin-top: 175px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mm-head {
+        margin: 0 -105px;
+    }
+
+    #gallery-filter .single-content iframe {
+        height: 150px;
+    }
+
+    #gallery-filter .single-content img,
+    #gallery-filter .single-content iframe {
+        width: 210px;
+    }
+    #gallery-filter li {
+        padding: 10px 15px;
+    }
+
+    #footer-content {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #home-slider {
+        height: 565px;
+        margin-top: 25px;
+    }
+    .navBar .col-md-4 {
+        width: 33.33%;
+    }
+    .navBar .logo-anchor::after {
+        background: linear-gradient(transparent 66%, #a58251 56%);
+    }
+    .mm-head {
+        margin: 0 -60px;
+        font-size: 40px;
+    }
+
 }
