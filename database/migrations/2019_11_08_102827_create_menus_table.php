@@ -21,7 +21,7 @@ class CreateMenusTable extends Migration
             $table->string('slug');
             $table->integer('parent_id')->unsigned()->nullable();
             $table->integer('menu_id')->unsigned();
-            $table->enum('status',['enable','disable'])->unsigned();
+            $table->enum('status',['enable','disable']);
             $table->integer('sequence');
         });
     }

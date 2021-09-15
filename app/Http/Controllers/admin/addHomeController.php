@@ -47,16 +47,11 @@ class addHomeController extends Controller
             'abt_heading' => 'required',
             'abt_content' => 'required',
         ]);
-
-        $img = $request->file('logo1');
-        $img_name = $img->getClientOriginalName();
-        $filename = date('his') . '-' . $img_name;
-        $img_name = $img->storePubliclyAs('logo', $filename);
-        $request->merge(['logo' => 'storage/' .$filename]);
+         $filename = addMedia($request->file('logo1'),'logo');
+         $request->merge(['logo' => 'storage/' .$filename]);
         
-        $data = $request->all();
-         homepage::create($data);
-      
+         $data = $request->all();
+          homepage::create($data);
     }
 
     /**

@@ -27,5 +27,5 @@ class homepage extends Model
         'updated_at',
     ];
 
-
+  
 }
