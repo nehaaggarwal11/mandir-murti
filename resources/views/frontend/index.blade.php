@@ -9,6 +9,7 @@
     <div class="container">
         <div class="row">
             <div class="carousel-inner">
+
                 {{-- <div class="carousel-item active">
                         <img src="{{asset('assets/frontend/imgs/slider/luxmi-narayan-1.jpg')}}"
                             class="d-block w-100">
@@ -38,13 +39,30 @@
                 </li> 
                 @endforeach
                 {{-- <li data-target="#home-slider" data-slide-to="0" class="active"><img
+          <div class="carousel-item active">
+                    <img src="{{asset('assets/frontend/imgs/slider/luxmi-narayan-1.jpg')}}"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}"
+                        class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="d-block w-100">
+                </div>
+            </div>
+            <ol class="carousel-indicators">
+                <li data-target="#home-slider" data-slide-to="0" class="active"><img
+
                         src="{{asset('assets/frontend/imgs/slider/luxmi-narayan-1.jpg')}}" class="d-block w-100">
                 </li> 
                  <li data-target="#home-slider" data-slide-to="0" class="active"><img
                         src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}" class="d-block w-100">
                 </li>
                 <li data-target="#home-slider" data-slide-to="1"><img
+
                         src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="d-block w-100"></li> --}}
+                        src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="d-block w-100"></li>
                         
             </ol>
              <a class="carousel-control-prev" href="#home-slider" role="button" data-slide="prev">
@@ -78,17 +96,14 @@
                 <div class="filters filter-button-group">
                     <ul>
                         <li class="active" data-filter="*">All</li>
-                        @foreach ($category as $cat)
-                        <li data-filter=".{{$cat->s_no}}">{{$cat->category_name}}</li>    
-                        @endforeach
-                        {{-- <li data-filter=".1">Charity</li>
-                        <li data-filter=".2">Construction</li>
-                        <li data-filter=".3">Mandir Darshan</li>
-                        <li data-filter=".4">Videos</li> --}}
+                        <li data-filter=".webdesign">Charity</li>
+                        <li data-filter=".webdev">Construction</li>
+                        <li data-filter=".brand">Mandir Darshan</li>
+                        <li data-filter=".video">Videos</li>
                     </ul>
                 </div>
                 <div class="content grid">
-                {{-- <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign webdev grid-item">
+                <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}" class="single-content webdesign webdev grid-item">
                         <img  class="p2" src="{{asset('assets/frontend/imgs/slider/slider-demo.jpg')}}">
                 </div>
                 <div  data-fancybox="gallery" data-src="{{asset('assets/frontend/imgs/slider/luxmi-narayan.jpg')}}" class="single-content brand webdesign grid-item">
@@ -114,13 +129,7 @@
                 </div>
                 <div data-fancybox="gallery"  data-fancybox="gallery" data-src="https://www.youtube.com/embed/gZllwhG_MCc" class="single-content webdesign video grid-item">
                     <iframe width="100%" src="https://www.youtube.com/embed/gZllwhG_MCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div> --}}
-                @foreach ($sliders as $slider)
-                
-                <div  data-fancybox="gallery" data-src="{{asset('/public'.$slider->logo)}}" class="single-content {{$slider->category}} grid-item">
-                    <img class="p2" src="{{asset('/public'.$slider->logo)}}">
                 </div>
-                @endforeach
             </div>
             </div>
         </div>

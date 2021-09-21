@@ -138,9 +138,10 @@ class MenusTableSeeder extends Seeder
         $this->insertLink('user,admin', 'Home Page', '/Homepage', 'cil-speedometer');
         $this->insertLink('user,admin', 'Home Slider', '/homeSlider', 'cil-speedometer');
         $this->beginDropdown('user,admin', 'Gallery', 'cil-calculator');
-            
-            $this->insertLink('user,admin', 'Filter Categoires', '/filterCategories');
-            $this->insertLink('user,admin', 'Filter Media',      '/filterMedia');
+        $this->insertLink('user,admin', 'Filter Categoires', '/filterCategories');
+        $this->insertLink('user,admin', 'Filter Media',      '/filterMedia');
+     $this->insertLink('user,admin', 'Filter Categoires', '/filterCategories');
+        $this->insertLink('user,admin', 'Filter Media',      '/filterMedia');
         $this->endDropdown();
         $this->beginDropdown('admin', 'Settings', 'cil-calculator');
             $this->insertLink('admin', 'Edit menu',               '/menu/menu');
@@ -165,4 +166,3 @@ class MenusTableSeeder extends Seeder
         $this->joinAllByTransaction(); ///   <===== Must by use on end of this seeder
     }
 }
-

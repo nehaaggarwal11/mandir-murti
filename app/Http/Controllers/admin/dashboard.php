@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+
 use App\Models\galleryadd;
 use Illuminate\Http\Request;
 use PhpParser\Node\Expr\FuncCall;
@@ -12,6 +13,7 @@ use App\Models\category_list;
 use App\Models\category;
 use App\Models\slider_list;
 use DB;
+
 class dashboard extends Controller
 {
     public function __construct()
@@ -27,6 +29,7 @@ class dashboard extends Controller
     {
         return view('dashboard.homepage-edit');
     }
+
 
 
     // Slider
@@ -182,4 +185,5 @@ class dashboard extends Controller
           }
     }
     
+
 }

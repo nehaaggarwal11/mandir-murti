@@ -25,7 +25,6 @@ Route::group(['middleware' => ['get.menu']], function () {
     Auth::routes();
     Route::get('/admin', [dashboard::class, 'index'])->name('index');
     Route::get('/Homepage', [dashboard::class, 'homepage'])->name('homepage');
-    
     Route::get('/homeSlider', [dashboard::class, 'homeSlider'])->name('homeSlider');
     Route::get('/addImage', [dashboard::class, 'addImage'])->name('addImage');
     Route::get('/editslider/{id}', [dashboard::class, 'editslider'])->name('editslider');
