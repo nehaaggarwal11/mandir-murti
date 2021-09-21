@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Rosario:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+
+/**********Header**********/
+body {
+    background: url(/assets/frontend/imgs/bg_body.jpg) #ffe6b9;
+    font-family: 'Rosario', sans-serif;
+
+}
+
+.navBar {
+    background: transparent;
+    background-size: 150px;
+    position: relative;
+    z-index: 1;
+}
+
+.navBar .logo-anchor {
+    display: inline-block;
+    background-size: 150px;
+    padding: 10px 45px 30px;
+    margin: 0 0 -55px 0px;
+    z-index: 10;
+    position: relative;
+    border-radius: 50%;
+
+}
+
+.mm-head {
+    font-size: 45px;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    top: 25%;
+    margin: 0 -235px;
+    color: #521b00;
+}
+
+.navBar .logo-anchor::before {
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 160px;
+    background: linear-gradient(transparent 65%, #f16e24 60%);
+    left: 0;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.navBar .logo-anchor::after {
+    content: "";
+    width: 103%;
+    position: absolute;
+    height: 165px;
+    background: linear-gradient(transparent 65%, #a58251 60%);
+    left: -4px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+/**********Footer**********/
+footer {
+    background: url(/assets/frontend/imgs/footer_bg.jpg);
+    padding: 25px 0;
+    background-size: cover;
+    color: #fff;
+    height: 309px;
+    background-position: bottom;
+    font-size: 17px;
+}
+footer p{
+    margin-bottom: 5px;
+}
+#footer-content{
+    padding: 0 9em;
+}
+#copy-right{
+    font-size: 14px;
+    margin-top: 190px;
+    color: #000;
+}
+/*********General Css***********/
+.sp {
+    padding: 50px 0 20px;
+}
+
+.mm-heading {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    letter-spacing: 4.5px;
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.seprator {
+    background: url('/assets/frontend/imgs/floral-decor.png') no-repeat;
+    background-size: auto;
+    height: 25px;
+    background-position: center;
+    background-size: auto;
+}
+
+.seprator::before,
+.seprator::after {
+    content: "";
+    border: 1px #a58251;
+    border-style: dashed none solid;
+    width: 135px;
+    display: inline-block;
+    height: 5px;
+    margin: 0 45px;
+}
+
+/********** Gallery **********/
+#gallery-filter .content {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px;
+    text-align: center;
+}
+
+#gallery-filter .single-content {
+    margin: 5px;
+    overflow: hidden;
+}
+
+#gallery-filter .single-content::before,
+#gallery-filter .single-content::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+#gallery-filter .single-content::after {
+    background: url(/assets/frontend/imgs/lightbox-thumb.png) no-repeat;
+    background-position: center 1000px;
+}
+
+#gallery-filter .single-content:hover:after {
+    background-position: center;
+}
+
+#gallery-filter .single-content:hover:before {
+    top: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+#gallery-filter .single-content img,
+#gallery-filter .single-content iframe {
+    width: 350px;
+    height: 100%
+}
+
+#gallery-filter .single-content iframe {
+    height: 235px;
+}
+
+#gallery-filter .filters {
+    width: 100%;
+    text-align: center;
+}
+
+#gallery-filter ul {
+    list-style: none;
+    padding: 20px 0;
+}
+
+#gallery-filter li {
+    display: inline;
+    padding: 10px 25px;
+    font-size: 14px;
+    color: #636363;
+    font-weight: 400;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    border: 1px solid #636363;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+
+#gallery-filter li.active,
+#gallery-filter li:hover {
+    color: #000;
+    border: 1px solid #f60;
+    border-radius: 15px;
+    background: #ff660038;
+}
+
+/************** Responisve *************/
+
+@media only screen and (max-width: 1399px) {
+    .mm-head {
+        margin: 0 -135px;
+    }
+
+    #gallery-filter .single-content img,
+    #gallery-filter .single-content iframe {
+        width: 290px;
+    }
+
+    #copy-right {
+        margin-top: 175px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .mm-head {
+        margin: 0 -105px;
+    }
+
+    #gallery-filter .single-content iframe {
+        height: 150px;
+    }
+
+    #gallery-filter .single-content img,
+    #gallery-filter .single-content iframe {
+        width: 210px;
+    }
+    #gallery-filter li {
+        padding: 10px 15px;
+    }
+
+    #footer-content {
+        padding: 0 1em;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #home-slider {
+        height: 565px;
+        margin-top: 25px;
+    }
+    .navBar .col-md-4 {
+        width: 33.33%;
+    }
+    .navBar .logo-anchor::after {
+        background: linear-gradient(transparent 66%, #a58251 56%);
+    }
+    .mm-head {
+        margin: 0 -60px;
+        font-size: 40px;
+    }
+
+}
